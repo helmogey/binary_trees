@@ -30,7 +30,7 @@ return (is_perfect_util(tree, 0));
 
 int is_perfect_util(const binary_tree_t *node, int level)
 {
-    
+
 if (node == NULL)
 {
 return (1);
@@ -40,10 +40,6 @@ if ((node->left == NULL) != (node->right == NULL))
 return (0);
 }
 
-// if ((node->left->parent != node) || (node->right->parent != node))
-// {
-// return (0);
-// }
 
 if ((node->left == NULL) != (node->right == NULL))
 {
