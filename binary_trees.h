@@ -35,5 +35,6 @@ binary_tree_t *binary_trees_ancestor(const binary_tree_t *first, const binary_tr
 void binary_tree_levelorder(const binary_tree_t *tree, void (*func)(int));
 void binary_tree_delete(binary_tree_t *tree);
 int binary_tree_is_leaf(const binary_tree_t *node);
+int binary_tree_is_root(const binary_tree_t *node);
 int binary_tree_is_perfect(const binary_tree_t *tree);
 #endif /* _BINARY_TREES_H_ */
