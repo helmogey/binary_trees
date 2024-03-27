@@ -25,8 +25,5 @@ if (node == parent->left)
 {
 return (parent->right);
 }
-else
-{
 return (parent->left);
-}
 }
