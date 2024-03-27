@@ -16,13 +16,13 @@ if (node == NULL)
 return (level == 0);
 }
 
-if (node->left == NULL != node->right == NULL)
+if ((node->left == NULL) != (node->right == NULL))
 {
 return (0);
 }
 
 return (is_perfect_util(node->left, level + 1) &&
-           is_perfect_util(node->right, level + 1));
+is_perfect_util(node->right, level + 1));
 }
 
 /**
@@ -41,5 +41,3 @@ return (0);
 
 return (is_perfect_util(tree, 0));
 }
-
-
