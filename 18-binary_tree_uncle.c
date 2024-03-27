@@ -12,14 +12,14 @@
 
 binary_tree_t *binary_tree_uncle(binary_tree_t *node)
 {
+/* Get the parent node */
+binary_tree_t *parent = node->parent;
+
 /* Check for NULL node */
 if (node == NULL || node->parent == NULL)
 {
 return (NULL);
 }
-
-/* Get the parent node */
-binary_tree_t *parent = node->parent;
 
 /* Check if the parent has a parent (grandparent) */
 if (parent->parent == NULL)
