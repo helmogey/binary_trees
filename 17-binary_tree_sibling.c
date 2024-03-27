@@ -23,7 +23,7 @@ return (NULL);
 /* Identify the sibling based on the node's position */
 if (node == parent->left)
 {
-return parent->right;
+return (parent->right);
 }
 else
 {
