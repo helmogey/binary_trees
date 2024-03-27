@@ -18,9 +18,7 @@ return;
 
 func(tree->n);
 
-    // Recursively traverse the left subtree
 binary_tree_preorder(tree->left, func);
 
-    // Recursively traverse the right subtree
 binary_tree_preorder(tree->right, func);
 }
