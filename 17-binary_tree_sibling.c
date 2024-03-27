@@ -11,14 +11,14 @@
 
 binary_tree_t *binary_tree_sibling(binary_tree_t *node)
 {
+/* Get the parent node */
+binary_tree_t *parent = node->parent;
+
 /* Check for NULL node or parent */
 if (node == NULL || node->parent == NULL)
 {
 return (NULL);
 }
-
-/* Get the parent node */
-binary_tree_t *parent = node->parent;
 
 /* Identify the sibling based on the node's position */
 if (node == parent->left)
