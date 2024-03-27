@@ -24,7 +24,7 @@ is_full_util(node->right) == 0)
 {
 return (0);
 }
-return(1);
+return (1);
 }
 
 
