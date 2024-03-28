@@ -65,4 +65,5 @@ void binary_tree_postorder(const binary_tree_t *tree, void (*func)(int));
 size_t binary_tree_height(const binary_tree_t *tree);
 int binary_tree_is_perfect(const binary_tree_t *tree);
 int binary_tree_is_bst(const binary_tree_t *tree);
+int is_bst_helper(const binary_tree_t *tree, int low, int high);
 #endif /* _BINARY_TREES_H_ */
