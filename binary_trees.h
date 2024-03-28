@@ -19,27 +19,7 @@ typedef struct binary_tree_s
 	struct binary_tree_s *right;
 } binary_tree_t;
 
-/**
- * is_bst_helper - Checks if a binary tree is a valid binary search tree.
- *
- * @tree: A pointer.
- * @low: value
- * @high: value.
- *
- * Return: If the tree is a valid BST.
- */
-int is_bst_helper(const binary_tree_t *tree, int low, int high)
-{
-	if (tree != NULL)
-	{
-		if (tree->n < low || tree->n > high)
-			return (0);
-		return (is_bst_helper(tree->left, low, tree->n - 1) &&
-			is_bst_helper(tree->right, tree->n + 1, high));
-	}
 
-	return (1);
-}
 
 void binary_tree_print(const binary_tree_t *);
 binary_tree_t *binary_tree_node(binary_tree_t *parent, int value);
@@ -64,6 +44,5 @@ void binary_tree_inorder(const binary_tree_t *tree, void (*func)(int));
 void binary_tree_postorder(const binary_tree_t *tree, void (*func)(int));
 size_t binary_tree_height(const binary_tree_t *tree);
 int binary_tree_is_perfect(const binary_tree_t *tree);
-int binary_tree_is_bst(const binary_tree_t *tree);
-int is_bst_helper(const binary_tree_t *tree, int low, int high);
+
 #endif /* _BINARY_TREES_H_ */
