@@ -8,7 +8,6 @@
  * @level: int
  * Return: new_node
  */
-
 int is_perfect_util(const binary_tree_t *node, int level)
 {
 
